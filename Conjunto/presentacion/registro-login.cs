@@ -23,9 +23,16 @@ namespace presentacion
         {
             try
             {
-                if ()
+                if (usuario.documentVer(txtnumero.Text))
                 {
-
+                    MessageBox.Show("El numero de documento el cual intenta registrar ya existe");
+                }
+                else
+                {
+                    mdicontainer mdicontainer = new mdicontainer();
+                    mdicontainer.Show();
+                    this.Hide();
+                    mdicontainer.FormClosed += (s, args) => Application.Exit();
                 }
             }
             catch (Exception xe)

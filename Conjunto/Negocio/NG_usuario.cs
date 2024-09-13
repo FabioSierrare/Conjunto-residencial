@@ -14,7 +14,7 @@ namespace Negocio
 
         public bool VerificarUser(string numero_documento, string contraseña)
         {
-            n = log.VerificarUsuario(email, contraseña);
+            n = log.VerificarUsuario(numero_documento, contraseña);
             return n;
         }
         public void Registrar(string usuario, string email, string contraseña, string tipo_documento, string numero_documento)
