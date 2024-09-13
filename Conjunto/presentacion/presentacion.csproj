@@ -50,6 +50,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarPropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPropiedad.Designer.cs">
+      <DependentUpon>ActualizarPropiedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="añadirpropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="añadirpropiedad.Designer.cs">
+      <DependentUpon>añadirpropiedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesPropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesPropiedad.Designer.cs">
+      <DependentUpon>DetallesPropiedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarPropiedad.Designer.cs">
+      <DependentUpon>EliminarPropiedad.cs</DependentUpon>
+    </Compile>
     <Compile Include="iniciar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +100,18 @@
     <Compile Include="registro-login.Designer.cs">
       <DependentUpon>registro-login.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarPropiedad.resx">
+      <DependentUpon>ActualizarPropiedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="añadirpropiedad.resx">
+      <DependentUpon>añadirpropiedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesPropiedad.resx">
+      <DependentUpon>DetallesPropiedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPropiedad.resx">
+      <DependentUpon>EliminarPropiedad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="iniciar.resx">
       <DependentUpon>iniciar.cs</DependentUpon>
     </EmbeddedResource>
