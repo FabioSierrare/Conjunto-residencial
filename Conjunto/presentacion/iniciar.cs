@@ -37,5 +37,10 @@ namespace presentacion
                 MessageBox.Show(xe.Message);
             }
         }
+
+        private void iniciar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

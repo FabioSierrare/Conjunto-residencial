@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,27 @@ namespace presentacion
 {
     public partial class registro_login : Form
     {
+        NG_usuario usuario = new NG_usuario();
         public registro_login()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                usuario.Registrar(txtusuarior.Text,txtcorreor.Text,txtcontraseñar.Text,txttipo_documento.Text, txtnumero_documento.Text);
+                mdicontainer mdicontainer = new mdicontainer();
+                mdicontainer.Show();
+                this.Hide();
+                mdicontainer.FormClosed += (s, args) => Application.Exit();
+            }
+            catch (Exception xe)
+            {
+
+                MessageBox.Show(xe.Message);
+            }
         }
     }
 }
