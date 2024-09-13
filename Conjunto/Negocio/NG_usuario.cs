@@ -17,5 +17,9 @@ namespace Negocio
             n = log.VerificarUsuario(email, contraseña);
             return n;
         }
+        public void Registrar(string usuario, string email, string contraseña, string tipo_documento, string numero_documento)
+        {
+            log.Registro(usuario,email,contraseña,tipo_documento,numero_documento);
+        }
     }
 }
