@@ -12,7 +12,7 @@ namespace Negocio
         private login log = new login();
         bool n = false;
 
-        public bool VerificarUser(string email, string contraseña)
+        public bool VerificarUser(string numero_documento, string contraseña)
         {
             n = log.VerificarUsuario(email, contraseña);
             return n;
@@ -20,6 +20,12 @@ namespace Negocio
         public void Registrar(string usuario, string email, string contraseña, string tipo_documento, string numero_documento)
         {
             log.Registro(usuario,email,contraseña,tipo_documento,numero_documento);
+        }
+        public bool documentVer(string numero_documento)
+        {
+            n = log.documentoEx(numero_documento);
+            return n;
+
         }
     }
 }
