@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,29 @@ namespace presentacion
 {
     public partial class iniciar : Form
     {
+        NG_usuario usuario = new NG_usuario();
         public iniciar()
         {
             InitializeComponent();
+        }
+
+        private void btniniciars_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (usuario.VerificarUser(txtcorreo.Text, txtcontraseña.Text))
+                {
+                    mdicontainer mdicontainer = new mdicontainer();
+                    mdicontainer.Show();
+                    this.Hide();
+                    mdicontainer.FormClosed += (s, args) => Application.Exit();
+                }
+            }
+            catch (Exception xe)
+            {
+
+                MessageBox.Show(xe.Message);
+            }
         }
     }
 }

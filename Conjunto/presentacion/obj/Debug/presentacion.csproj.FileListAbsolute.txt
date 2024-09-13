@@ -15,3 +15,6 @@ C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\obj\Debug\presentacion.cs
 C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\obj\Debug\presentacion.exe
 C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\obj\Debug\presentacion.pdb
 C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\bin\Debug\presentacion.exe.config
+C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\bin\Debug\Persistencia.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\bin\Debug\Persistencia.pdb
+C:\Users\Fasire\Desktop\conjunto\Conjunto\presentacion\bin\Debug\Persistencia.dll.config

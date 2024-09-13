@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnregistrar = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,31 +61,33 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "¡Bienvenido(a) a tu hogar";
             // 
-            // button2
+            // btnregistrar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(419, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 40);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "REGISTRO";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnregistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
+            this.btnregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistrar.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnregistrar.Location = new System.Drawing.Point(419, 381);
+            this.btnregistrar.Name = "btnregistrar";
+            this.btnregistrar.Size = new System.Drawing.Size(176, 40);
+            this.btnregistrar.TabIndex = 9;
+            this.btnregistrar.Text = "REGISTRO";
+            this.btnregistrar.UseVisualStyleBackColor = false;
+            this.btnregistrar.Click += new System.EventHandler(this.btnregistrar_Click);
             // 
-            // button1
+            // btnIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(419, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 40);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "INICIAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciar.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ForeColor = System.Drawing.Color.White;
+            this.btnIniciar.Location = new System.Drawing.Point(419, 256);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(176, 40);
+            this.btnIniciar.TabIndex = 8;
+            this.btnIniciar.Text = "INICIAR";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // pictureBox2
             // 
@@ -106,7 +108,7 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,11 +116,11 @@
             this.ClientSize = new System.Drawing.Size(1017, 555);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnregistrar);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "login";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -131,8 +133,8 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnregistrar;
+        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

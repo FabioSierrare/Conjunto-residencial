@@ -11,7 +11,7 @@ namespace Persistencia
 
         public SqlConnection AbrirConexion()
         {
-            if (cnx.State == ConnectionState.Closed) // Verificamos que la conexión esté cerrada
+            if (cnx.State == ConnectionState.Closed)
             {
                 cnx.Open();
             }
@@ -20,7 +20,7 @@ namespace Persistencia
 
         public SqlConnection CerrarConexion()
         {
-            if (cnx.State == ConnectionState.Open) // Verificamos que la conexión esté abierta antes de cerrarla
+            if (cnx.State == ConnectionState.Open) 
             {
                 cnx.Close();
             }

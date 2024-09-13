@@ -29,28 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iniciar));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btniniciars = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btniniciars
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Algerian", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(364, 265);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 36);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btniniciars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
+            this.btniniciars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btniniciars.Font = new System.Drawing.Font("Algerian", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniniciars.ForeColor = System.Drawing.Color.White;
+            this.btniniciars.Location = new System.Drawing.Point(364, 265);
+            this.btniniciars.Name = "btniniciars";
+            this.btniniciars.Size = new System.Drawing.Size(113, 36);
+            this.btniniciars.TabIndex = 18;
+            this.btniniciars.Text = "Aceptar";
+            this.btniniciars.UseVisualStyleBackColor = false;
+            this.btniniciars.Click += new System.EventHandler(this.btniniciars_Click);
             // 
             // label3
             // 
@@ -62,12 +63,12 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Contraseña";
             // 
-            // textBox2
+            // txtcontraseña
             // 
-            this.textBox2.Location = new System.Drawing.Point(382, 188);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 20);
-            this.textBox2.TabIndex = 16;
+            this.txtcontraseña.Location = new System.Drawing.Point(382, 188);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(163, 20);
+            this.txtcontraseña.TabIndex = 16;
             // 
             // label1
             // 
@@ -79,12 +80,12 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Correo";
             // 
-            // textBox1
+            // txtcorreo
             // 
-            this.textBox1.Location = new System.Drawing.Point(382, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtcorreo.Location = new System.Drawing.Point(382, 107);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(163, 20);
+            this.txtcorreo.TabIndex = 14;
             // 
             // label2
             // 
@@ -113,11 +114,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(617, 436);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btniniciars);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcontraseña);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "iniciar";
@@ -130,11 +131,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btniniciars;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
