@@ -23,11 +23,10 @@ namespace presentacion
         {
             try
             {
-                usuario.Registrar(txtusuarior.Text,txtcorreor.Text,txtcontraseñar.Text,txttipo_documento.Text, txtnumero_documento.Text);
-                mdicontainer mdicontainer = new mdicontainer();
-                mdicontainer.Show();
-                this.Hide();
-                mdicontainer.FormClosed += (s, args) => Application.Exit();
+                if ()
+                {
+
+                }
             }
             catch (Exception xe)
             {

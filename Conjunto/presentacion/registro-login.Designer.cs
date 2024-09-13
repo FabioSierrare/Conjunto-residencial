@@ -32,7 +32,7 @@
             this.txttipo_documento = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtcontraseñar = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtnumero = new System.Windows.Forms.TextBox();
             this.txtcorreor = new System.Windows.Forms.TextBox();
             this.txtusuarior = new System.Windows.Forms.TextBox();
             this.txtnumero_documento = new System.Windows.Forms.Label();
@@ -79,12 +79,12 @@
             this.txtcontraseñar.Size = new System.Drawing.Size(169, 20);
             this.txtcontraseñar.TabIndex = 31;
             // 
-            // textBox3
+            // txtnumero
             // 
-            this.textBox3.Location = new System.Drawing.Point(402, 285);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(169, 20);
-            this.textBox3.TabIndex = 30;
+            this.txtnumero.Location = new System.Drawing.Point(402, 285);
+            this.txtnumero.Name = "txtnumero";
+            this.txtnumero.Size = new System.Drawing.Size(169, 20);
+            this.txtnumero.TabIndex = 30;
             // 
             // txtcorreor
             // 
@@ -180,7 +180,7 @@
             this.Controls.Add(this.txttipo_documento);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtcontraseñar);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtnumero);
             this.Controls.Add(this.txtcorreor);
             this.Controls.Add(this.txtusuarior);
             this.Controls.Add(this.txtnumero_documento);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.ComboBox txttipo_documento;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtcontraseñar;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtnumero;
         private System.Windows.Forms.TextBox txtcorreor;
         private System.Windows.Forms.TextBox txtusuarior;
         private System.Windows.Forms.Label txtnumero_documento;

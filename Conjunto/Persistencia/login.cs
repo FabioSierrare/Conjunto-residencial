@@ -18,7 +18,7 @@ namespace Persistencia
         private SqlDataReader reader = null;
         private bool n = false;
 
-        public bool VerificarUsuario(string email, string contraseña)
+        public bool VerificarUsuario(string numero_documento, string contraseña)
         {
             command.CommandText = "SPSelecionarUsuario";
             command.Connection = conexion.AbrirConexion();
@@ -27,7 +27,7 @@ namespace Persistencia
             command.Parameters.Clear();
 
             while (reader.Read()) {
-                if (reader[2].ToString() == email && reader[3].ToString() == contraseña)
+                if (reader[5].ToString() == numero_documento && reader[3].ToString() == contraseña)
                 {
                     n = true; break;
                 }
@@ -51,6 +51,27 @@ namespace Persistencia
             command.ExecuteNonQuery();
             command.Parameters.Clear();
             conexion.CerrarConexion();
+        }
+        
+        public bool documentoEx(string numero_documento)
+        {
+            command.CommandText = "SPSelecionarUsuario";
+            command.Connection = conexion.AbrirConexion();
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            reader = command.ExecuteReader();
+            command.Parameters.Clear();
+
+            while (reader.Read())
+            {
+                if (reader[5].ToString() == numero_documento)
+                {
+                    n = true; break;
+                }
+            }
+
+            conexion.CerrarConexion();
+
+            return n;
         }
     }
 }
