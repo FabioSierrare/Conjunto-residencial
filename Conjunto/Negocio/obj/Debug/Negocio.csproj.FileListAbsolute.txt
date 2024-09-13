@@ -1,0 +1,12 @@
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\Persistencia.dll.config
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Negocio\obj\Debug\Negocio.pdb
