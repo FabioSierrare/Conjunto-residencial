@@ -1,0 +1,10 @@
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Fasire\Desktop\conjunto\Conjunto\Persistencia\obj\Debug\Persistencia.pdb
