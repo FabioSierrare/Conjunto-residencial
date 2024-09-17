@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(añadirpropiedad));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtestado = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbaños = new System.Windows.Forms.TextBox();
+            this.txthabitaciones = new System.Windows.Forms.TextBox();
+            this.txttamaño = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,20 +45,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txttipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // txtestado
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.txtestado.FormattingEnabled = true;
+            this.txtestado.Items.AddRange(new object[] {
             "Alquilado",
             "Desocupado",
             "Mantenimiento"});
-            this.comboBox1.Location = new System.Drawing.Point(464, 188);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(122, 21);
-            this.comboBox1.TabIndex = 39;
+            this.txtestado.Location = new System.Drawing.Point(464, 188);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(122, 21);
+            this.txtestado.TabIndex = 39;
             // 
             // button1
             // 
@@ -73,48 +73,46 @@
             this.button1.TabIndex = 38;
             this.button1.Text = "REGISTRAR PROPIEDAD";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox7
+            // txtbaños
             // 
-            this.textBox7.Location = new System.Drawing.Point(464, 308);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(122, 20);
-            this.textBox7.TabIndex = 37;
+            this.txtbaños.Location = new System.Drawing.Point(464, 308);
+            this.txtbaños.Name = "txtbaños";
+            this.txtbaños.Size = new System.Drawing.Size(122, 20);
+            this.txtbaños.TabIndex = 37;
+            this.txtbaños.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbaños_KeyPress);
             // 
-            // textBox6
+            // txthabitaciones
             // 
-            this.textBox6.Location = new System.Drawing.Point(464, 228);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(122, 20);
-            this.textBox6.TabIndex = 36;
+            this.txthabitaciones.Location = new System.Drawing.Point(464, 228);
+            this.txthabitaciones.Name = "txthabitaciones";
+            this.txthabitaciones.Size = new System.Drawing.Size(122, 20);
+            this.txthabitaciones.TabIndex = 36;
+            this.txthabitaciones.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txthabitaciones_KeyPress);
             // 
-            // textBox4
+            // txttamaño
             // 
-            this.textBox4.Location = new System.Drawing.Point(464, 148);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 20);
-            this.textBox4.TabIndex = 35;
+            this.txttamaño.Location = new System.Drawing.Point(464, 148);
+            this.txttamaño.Name = "txttamaño";
+            this.txttamaño.Size = new System.Drawing.Size(122, 20);
+            this.txttamaño.TabIndex = 35;
+            this.txttamaño.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttamaño_KeyPress);
             // 
-            // textBox3
+            // txtprecio
             // 
-            this.textBox3.Location = new System.Drawing.Point(464, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 20);
-            this.textBox3.TabIndex = 34;
+            this.txtprecio.Location = new System.Drawing.Point(464, 268);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(122, 20);
+            this.txtprecio.TabIndex = 33;
+            this.txtprecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprecio_KeyPress);
             // 
-            // textBox2
+            // txtdireccion
             // 
-            this.textBox2.Location = new System.Drawing.Point(464, 268);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 20);
-            this.textBox2.TabIndex = 33;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(464, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
-            this.textBox1.TabIndex = 32;
+            this.txtdireccion.Location = new System.Drawing.Point(464, 68);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(122, 20);
+            this.txtdireccion.TabIndex = 32;
             // 
             // label8
             // 
@@ -214,20 +212,31 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // txttipo
+            // 
+            this.txttipo.FormattingEnabled = true;
+            this.txttipo.Items.AddRange(new object[] {
+            "Casa",
+            "Apartamento"});
+            this.txttipo.Location = new System.Drawing.Point(464, 108);
+            this.txttipo.Name = "txttipo";
+            this.txttipo.Size = new System.Drawing.Size(122, 21);
+            this.txttipo.TabIndex = 40;
+            // 
             // añadirpropiedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(708, 468);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txttipo);
+            this.Controls.Add(this.txtestado);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbaños);
+            this.Controls.Add(this.txthabitaciones);
+            this.Controls.Add(this.txttamaño);
+            this.Controls.Add(this.txtprecio);
+            this.Controls.Add(this.txtdireccion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -239,6 +248,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "añadirpropiedad";
             this.Text = "añadirpropiedad";
+            this.Load += new System.EventHandler(this.añadirpropiedad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,14 +257,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtestado;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbaños;
+        private System.Windows.Forms.TextBox txthabitaciones;
+        private System.Windows.Forms.TextBox txttamaño;
+        private System.Windows.Forms.TextBox txtprecio;
+        private System.Windows.Forms.TextBox txtdireccion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -264,5 +273,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox txttipo;
     }
 }

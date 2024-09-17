@@ -16,5 +16,12 @@ namespace presentacion
         {
             InitializeComponent();
         }
+
+        private void nuevaPropiedadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            añadirpropiedad propiedad = new añadirpropiedad();
+            propiedad.MdiParent = this;
+            propiedad.Show();
+        }
     }
 }

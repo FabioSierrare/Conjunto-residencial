@@ -73,5 +73,31 @@ namespace Persistencia
 
             return n;
         }
+
+
+        //Propiedad
+
+        //Añadir propiedad
+
+        public void NuevaPropiedad(string direccion, string tipo, string tamaño, int num_habitaciones, int
+num_banos, double precio, string estado)
+        {
+            command.Connection = conexion.AbrirConexion();
+            command.CommandText = "spCrearPropiedad";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@direccion", direccion);
+            command.Parameters.AddWithValue("@tipo", tipo);
+            command.Parameters.AddWithValue("@tamano", tamaño);
+            command.Parameters.AddWithValue("@num_habitaciones", num_habitaciones);
+            command.Parameters.AddWithValue("@num_banos", num_banos);
+            command.Parameters.AddWithValue("@precio", precio);
+            command.Parameters.AddWithValue("@estado", estado);
+            command.ExecuteNonQuery();
+            command.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
+
     }
+
+
 }

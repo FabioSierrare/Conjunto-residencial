@@ -74,11 +74,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(293, 109);
+            this.label1.Location = new System.Drawing.Point(267, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(81, 15);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Correo";
+            this.label1.Text = "Documento";
             // 
             // txtcorreo
             // 
@@ -86,6 +86,7 @@
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(163, 20);
             this.txtcorreo.TabIndex = 14;
+            this.txtcorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcorreo_KeyPress);
             // 
             // label2
             // 

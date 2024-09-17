@@ -28,5 +28,13 @@ namespace Negocio
 
         }
 
+        //Propiedad
+
+        public void Nuevapropiedad(string direccion, string tipo, string tamaño, int num_habitaciones, int
+num_banos, double precio, string estado)
+        {
+            log.NuevaPropiedad(direccion, tipo, tamaño, num_habitaciones, num_banos, precio, estado);
+        }
+
     }
 }
